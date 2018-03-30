@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Saman';
+    src: url('../fonts/SAMAN.TTF')
+}
+
+h1 {    
+    font-family: 'Saman';
+    font-size: 7em;
+    text-align: center;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;  
+}
+
+.btn-large {
+    width: 100%;
+    background-color: #0d47a1;
+}
+
+.btn-large:hover {
+    background-color: #1565c0;
+}
+
+[type="checkbox"]:checked + label:before {
+    border-right: 2px solid #0d47a1;
+    border-bottom: 2px solid #0d47a1;
+}
+
+.input-field input:focus + label {
+    color: #0d47a1 !important;
+}
+
+.row .input-field input:focus {
+    border-bottom: 1px #0d47a1 !important;
+    box-shadow: 0 1px 0 0 #0d47a1 !important
+}
+
+.container-master{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.container {
+    width: 350px;
+    float: left;
+}
+
+.box{
+    margin: auto;
+    width: 90%;
+    padding: 5px;
+}
+
+.row .col.s4 {
+    width: 100%;
+}
