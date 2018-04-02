@@ -3,7 +3,38 @@
     src: url('../fonts/SAMAN.TTF')
 }
 
-.background{
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+
+    #resize-div {
+        height: 200px;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
     background-color: #fafafa;
 }
 
@@ -45,15 +76,12 @@ h5 {
 }
 
 .container-master{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 }
 
 .container {
     width: 350px;
-    height: 460px;
+    height: 445px;
     float: left;
     position: relative;
 }
