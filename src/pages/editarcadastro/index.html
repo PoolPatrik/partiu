@@ -9,6 +9,11 @@
     <link rel="stylesheet" media="screen" href="../../../src/css/materialize-override.css" type="text/css" />
     <script src="../../../src/js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script src="../../../src/js/materialize.min.js" type="text/javascript"></script></script>
+    <script>
+    function mudaCor(){
+        document.getElementById("txtrect").innerHTML="Alterado";
+    }
+    </script>
 </head>
 <body class="background">
     <div class="container-master">
@@ -17,37 +22,39 @@
                 <h1>Partiu!</h1>    
                 <h5>CARONAS COMPARTILHADAS</h5>
             </div>
-            <div class="box grey darken-2">
-                <a class="btn-floating waves-effect waves-ligh orange"><i class="material-icons"><</i></a>
+            <div class="box">
                 <div class="row">
+                    <div class="input-field col s4">
+                        <input id="email" type="email" class="validate">
+                        <label for="nome">Nome</label>
+                    </div>
                 </div>
+               
                 <div class="row">
+                    <div class="input-field col s4">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
                 </div>
-                <div class="row">
-                </div>
-                <div class="row">
-                </div>
-                <div class="row">
-                    <div class="">
-                        <a class="waves-effect waves-light btn-large orange">Oferecer carona</a>
+                 <div class="row">
+                    <div class="input-field col s4">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Senha</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div>
-                        <a class="waves-effect waves-light btn-large orange">Mural de caronas</a>
+                    <div class="input-field col s4">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Digite novamente</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div>
-                        <a class="waves-effect waves-light btn-large orange">Chat</a>
-                    </div>
+                <div>
+                    <a class="waves-effect waves-light btn-large" onclick="mudaCor()"><text id="txtrect" x="5" y="35" font-family="Verdana" font-size="11" fill="white" >
+                      Alterar
+                    </text></a>
                 </div>
-                <div class="row">
                 </div>
-                <div class="row">
-                </div>
-                <div class="row">
-                </div>
+                
             </div> 
             <div class="row">
                 <h5>RODAPÉ</h5>
