@@ -23,26 +23,15 @@
     }
 }
 
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
-    background-color: #fafafa;
-}
-
 h1 {
     font-family: 'Saman';
     font-size: 7em;
     text-align: center;
     font-weight: 400;
+}
+
+.brand-logo {
+    font-family: 'Saman';
 }
 
 h5 {
@@ -73,17 +62,6 @@ h5 {
 .row .input-field input:focus {
     border-bottom: 1px #0d47a1 !important;
     box-shadow: 0 1px 0 0 #0d47a1 !important
-}
-
-.container-master{
-    position: relative;
-}
-
-.container {
-    width: 350px;
-    height: 445px;
-    float: left;
-    position: relative;
 }
 
 .box{
@@ -125,4 +103,8 @@ h5 {
 
 .inline {
     display: inline-block;
+}
+
+.nav{
+    background-color: #1565c0;
 }
