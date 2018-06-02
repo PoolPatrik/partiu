@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/head %>
+    
+    <style>
+        html, body {
+        height: 100%;
+        }
+
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            background-color: #fafafa;
+        }
+
+        .container-master{
+            position: relative;
+        }
+
+        .container {
+            width: 350px;
+            height: 445px;
+            float: left;
+            position: relative;
+        }
+    </style>
+    
+</head>
+<body class="background">
+    <div class="container-master">
+        <div class="container" id="resize-div">
+            <% include ../partials/container-logo %>
+        </div>
+        
+        <div class="container">
+            <% include ../partials/login %>
+        </div>
+    </div>
+</body>
+</html>

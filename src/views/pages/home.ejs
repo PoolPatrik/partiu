@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include ../partials/head %>
+        
+    </head>
+    <body>
+        <header>
+            <% include ../partials/header %>
+        </header>
+
+        <main>
+            <div class="corpo-pagina" style="padding: 0px 20px;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cidade</th>
+                            <th>Bairro</th>
+                            <th>Motorista</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="cursor: pointer;">
+                            <td class="clickme">Campo Bom</td>
+                            <td class="clickme">Centro</td>
+                            <td><a href="#!"><div style="height:100%;width:100%">Pool</div></a></td>
+                        </tr>
+
+                        <tr class="hideme">
+                            <td colspan="3">
+                                <div>
+                                    <li style="padding-left: 20px;"><b>Dias de aula: </b>Seg, Ter, Qua, Qui, Sex</li>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr style="cursor: pointer;">
+                            <td class="clickme">Sapiranga</td>
+                            <td class="clickme">Centenario</td>
+                            <td><a href="#"><div style="height:100%;width:100%">Guilherme</div></a></td> 
+                        </tr>
+
+                        <tr class="hideme">
+                            <td colspan="3">
+                                <div>
+                                    <li style="padding-left: 25px;"><b>Dias de aula: </b>Ter, Qui, Sex, Sab</li>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr style="cursor: pointer;">
+                            <td class="clickme">Parobé</td>
+                            <td class="clickme">Bela Vista</td>
+                            <td><a href="#"><div style="height:100%;width:100%">Luan</div></a></td> 
+                        </tr>
+
+                        <tr class="hideme">
+                            <td colspan="3">
+                                <div>
+                                    <li style="padding-left: 25px;"><b>Dias de aula: </b>Ter, Qui, Sex</li>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr style="cursor: pointer;">
+                            <td class="clickme">Campo Bom</td>
+                            <td class="clickme">Genuíno Sampaio</td>
+                            <td><a href="#"><div style="height:100%;width:100%">Rodrigo</div></a></td> 
+                        </tr>
+
+                        <tr class="hideme">
+                            <td colspan="3">
+                                <div>
+                                    <li style="padding-left: 25px;"><b>Dias de aula: </b>Ter, Sab</li>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr style="cursor: pointer;">
+                            <td class="clickme">Nova Hartz</td>
+                            <td class="clickme">Vila Grings</td>
+                            <td><a href="#"><div style="height:100%;width:100%">Pafuncio</div></a></td> 
+                        </tr>
+
+                        <tr class="hideme">
+                            <td colspan="3">
+                                <div>
+                                    <li style="padding-left: 25px;"><b>Dias de aula: </b>Seg, Ter, Qui, Sab</li>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Encontrar Carona</a></li>
+            <li><a href="#">Oferecer Carona</a></li>
+            <li><a href="/">Sair</a></li>
+        </ul>
+
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+
+            $('.hideme').find('td').hide();
+            $('.clickme').click(function () {
+                $(this).parent().next('.hideme').find('td').slideToggle();
+            });            
+        </script>
+    </body>
+</html>
