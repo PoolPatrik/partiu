@@ -50,18 +50,13 @@ h5 {
     background-color: #1565c0;
 }
 
-[type="checkbox"]:checked + label:before {
-    border-right: 2px solid #0d47a1;
-    border-bottom: 2px solid #0d47a1;
-}
-
 .input-field input:focus + label {
     color: #0d47a1 !important;
 }
 
 .row .input-field input:focus {
     border-bottom: 1px #0d47a1 !important;
-    box-shadow: 0 1px 0 0 #0d47a1 !important
+    box-shadow: 0 1px 0 0 #0d47a1 !important;
 }
 
 .box{

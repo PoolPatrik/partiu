@@ -1,8 +1,18 @@
 {
-    "name": "node-ejs",
-    "main": "server.js",
-    "dependencies": {
-        "ejs": "^2.6.1",
-        "express": "^4.16.3"
-    }
+  "name": "partiu",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.1.4",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.17.5"
+  }
 }
