@@ -1,12 +1,11 @@
-module.exports = function() {
-    var conexao = require('./../libs/connect_db')();
-    var Schema = require('mongoose').Schema;
+var mongoose = require('mongoose')
 
-    var user = Schema({
-        name: String,
-        email: String,
-        password: String
-    });
+var Schema = mongoose.Schema;
 
-    return conexao.model('users', user);
-}
+var user = Schema({
+    name: String,
+    email: String,
+    password: String
+});
+
+module.exports = mongoose.model('users', user)

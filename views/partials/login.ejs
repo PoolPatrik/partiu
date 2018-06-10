@@ -1,14 +1,14 @@
-<form action="">
+<form action="/login" method="POST">
     <div class="box">                
         <div class="row">
             <div class="input-field col s4">
-                <input id="email" type="email" class="validate">
+                <input name="email" type="email" class="validate">
                 <label for="email">Email</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s4">
-                <input id="password" type="password" class="validate">
+                <input name="password" type="password" class="validate">
                 <label for="password">Senha</label>
             </div>
         </div>
@@ -23,7 +23,7 @@
         </div>
 
         <div>
-            <a href="home" class="waves-effect waves-light btn-large">Entrar</a>
+            <button type="submit" class="waves-effect waves-light btn-large">Entrar</button>
         </div>
 
         <div class="link-label">

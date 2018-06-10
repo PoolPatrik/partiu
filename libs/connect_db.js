@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
-var conexao;
 
-module.exports = function() {
-    if (!conexao){
-        conexao = mongoose.createConnection('mongodb://localhost/partiu');
-    }
-    return conexao;
-}
+const mongoConnect = function() { 
+    mongoose.connection.openUri('mongodb://localhost/partiu', (err, res) => {
+        if (err) {
+            console.log('Failed: ' + err);
+        } else {
+            console.log('Connected');
+        }
+    });
+};
+
+module.exports = mongoConnect;
