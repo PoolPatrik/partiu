@@ -24,7 +24,7 @@
                         <tr style="cursor: pointer;">
                             <td class="clickme">Campo Bom</td>
                             <td class="clickme">Centro</td>
-                            <td><a href="#!"><div style="height:100%;width:100%">Pool</div></a></td>
+                            <td><a href="#"><div style="height:100%;width:100%">Pool</div></a></td>
                         </tr>
 
                         <tr class="hideme">
@@ -95,21 +95,6 @@
             </div>
         </main>
         
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="#">Encontrar Carona</a></li>
-            <li><a href="#">Oferecer Carona</a></li>
-            <li><a href="/">Sair</a></li>
-        </ul>
-
-        <script>
-            $(document).ready(function(){
-                $('.sidenav').sidenav();
-            });
-
-            $('.hideme').find('td').hide();
-            $('.clickme').click(function () {
-                $(this).parent().next('.hideme').find('td').slideToggle();
-            });            
-        </script>
+        <% include ../partials/mobile-sidenav %>
     </body>
 </html>

@@ -1,0 +1,16 @@
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="/home">Encontrar Carona</a></li>
+    <li><a href="/oferecer-carona">Oferecer Carona</a></li>
+    <li><a href="/">Sair</a></li>
+</ul>
+
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+
+    $('.hideme').find('td').hide();
+    $('.clickme').click(function () {
+        $(this).parent().next('.hideme').find('td').slideToggle();
+    });            
+</script>
