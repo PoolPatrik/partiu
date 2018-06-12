@@ -13,3 +13,6 @@ Projeto desenvolvido durante o semestre da cadeira de Tópicos Especiais em Sist
 
 1. Executar `npm install` no diretório onde se encontra o package.json para instalar as dependências;
 2. Executar `npm start` para inciar a aplicação.
+
+## Link Demonstração
+https://partiu.herokuapp.com/
