@@ -20,81 +20,38 @@
                         </tr>
                     </thead>
 
-                    <tbody>
-                        <tr style="cursor: pointer;">
-                            <td class="clickme">Campo Bom</td>
-                            <td class="clickme">Centro</td>
-                            <td><a href="#"><div style="height:100%;width:100%">Pool</div></a></td>
-                        </tr>
+                    <tbody>                        
+                        <% caronas.forEach(function(caronas) { %>
+                            <tr style="cursor: pointer;">
+                                <td class="clickme"><%= caronas.cidade %></td>
+                                <td class="clickme"><%= caronas.bairro %></td>
+                                <td><a href="#"><div style="height:100%;width:100%">Nome</div></a></td>
+                            </tr>
 
-                        <tr class="hideme">
-                            <td colspan="3">
-                                <div>
-                                    <li style="padding-left: 20px;"><b>Dias de aula: </b>Seg, Ter, Qua, Qui, Sex</li>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr style="cursor: pointer;">
-                            <td class="clickme">Sapiranga</td>
-                            <td class="clickme">Centenario</td>
-                            <td><a href="#"><div style="height:100%;width:100%">Guilherme</div></a></td> 
-                        </tr>
-
-                        <tr class="hideme">
-                            <td colspan="3">
-                                <div>
-                                    <li style="padding-left: 25px;"><b>Dias de aula: </b>Ter, Qui, Sex, Sab</li>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr style="cursor: pointer;">
-                            <td class="clickme">Parobé</td>
-                            <td class="clickme">Bela Vista</td>
-                            <td><a href="#"><div style="height:100%;width:100%">Luan</div></a></td> 
-                        </tr>
-
-                        <tr class="hideme">
-                            <td colspan="3">
-                                <div>
-                                    <li style="padding-left: 25px;"><b>Dias de aula: </b>Ter, Qui, Sex</li>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr style="cursor: pointer;">
-                            <td class="clickme">Campo Bom</td>
-                            <td class="clickme">Genuíno Sampaio</td>
-                            <td><a href="#"><div style="height:100%;width:100%">Rodrigo</div></a></td> 
-                        </tr>
-
-                        <tr class="hideme">
-                            <td colspan="3">
-                                <div>
-                                    <li style="padding-left: 25px;"><b>Dias de aula: </b>Ter, Sab</li>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr style="cursor: pointer;">
-                            <td class="clickme">Nova Hartz</td>
-                            <td class="clickme">Vila Grings</td>
-                            <td><a href="#"><div style="height:100%;width:100%">Pafuncio</div></a></td> 
-                        </tr>
-
-                        <tr class="hideme">
-                            <td colspan="3">
-                                <div>
-                                    <li style="padding-left: 25px;"><b>Dias de aula: </b>Seg, Ter, Qui, Sab</li>
-                                </div>
-                            </td>
-                        </tr>
+                            <tr class="hideme">
+                                <td colspan="3">
+                                    <div>
+                                        <li style="padding-left: 20px;"><b>Dias de aula: </b>
+                                            <%= caronas.segunda %>
+                                            <%= caronas.terca %>
+                                            <%= caronas.quarta %>
+                                            <%= caronas.quinta %>
+                                            <%= caronas.sexta %>
+                                            <%= caronas.sabado %>
+                                        </li>
+                                    </div>
+                                </td>
+                            </tr>
+                        <% }); %>
                     </tbody>
-                </table>
+                </table>                
             </div>
         </main>
+
         
+        
+        
+
         <% include ../partials/mobile-sidenav %>
     </body>
 </html>
