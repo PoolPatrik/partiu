@@ -7,6 +7,63 @@
     <header>
         <% include ../partials/header %>
     </header>
+    <form action="/oferecer-carona/cadastrar" method="POST" style="margin: auto;width: 90%;padding-top: 30px;">
+        <div class="row">
+            <div class="input-field col s4">
+                <input id="cidade" name="cidade" required="required" type="text" autocomplete="cidade">
+                <label for="cidade">Cidade de Origem</label>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="input-field col s4">
+                <input id="bairro" name="bairro" required="required" type="text" autocomplete="bairro">
+                <label for="bairro">Bairro</label>
+            </div>
+        </div>
+    
+        <div style="padding-left: 10px;" class="row">
+            <h6>Dias disponíveis:</h6>
+
+            <p>
+            <label>
+                <input id="segunda" name="segunda" type="checkbox" />
+                <span>Segunda&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            </label>
+
+            <label>
+                <input name="terca" type="checkbox"  />
+                <span>Terça&nbsp&nbsp&nbsp&nbsp</span>
+            </label>
+
+            <label>
+                <input name="quarta" type="checkbox"  />
+                <span>Quarta&nbsp&nbsp&nbsp&nbsp</span>
+            </label>
+            </p>
+
+            <p>
+            <label>
+                <input name="quinta" type="checkbox"  />
+                <span>Quinta&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            </label>
+
+            <label>
+                <input name="sexta" type="checkbox"  />
+                <span>Sexta&nbsp&nbsp&nbsp&nbsp</span>
+            </label>
+
+            <label>
+                <input name="sabado" type="checkbox"  />
+                <span>Sábado&nbsp&nbsp&nbsp&nbsp</span>
+            </label>
+            </p>
+        </div>
+    
+        <div>
+            <button type="submit" class="waves-effect waves-light btn-large">Cadastrar</button>
+        </div>
+    </form>
 
     <% include ../partials/mobile-sidenav %>
 </body>
